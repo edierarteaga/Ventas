@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opt_contains_data">
+        <item>Address</item>
+        <item>Anniversary</item>
+        <item>Birthday</item>
+        <item>Email</item>
+        <item>First name</item>
+        <item>IM</item>
+        <item>Last name</item>
+        <item>Middle name</item>
+        <item>Name prefix</item>
+        <item>Name suffix</item>
+        <item>Nickname</item>
+        <item>Note</item>
+        <item>Organization</item>
+        <item>Phone</item>
+        <item>Photo</item>
+        <item>Relative</item>
+        <item>Website</item>
+    </string-array>
+    <string-array name="opt_contedit_addresstypes">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="opt_contedit_emailtypes">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Other</item>
+        <item>Mobile</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="opt_contedit_organizationtypes">
+        <item>Work</item>
+        <item>Other</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="opt_contedit_phonetypes">
+        <item>Pan</item>
+        <item>huevo</item>
+        <item>salchicha</item>
+        <item>aceite</item>
+        <item>leche</item>
+        <item>cebolla</item>
+        <item>fosforos</item>
+        <item>chicle</item>
+        <item>arroz</item>
+        <item>atun</item>
+        <item>tomate carne</item>
+        <item>tomate de arbol</item>
+        <item>lenteja</item>
+        <item>frijol</item>
+
+    </string-array>
+    <string-array name="opt_contedit_websitetypes">
+        <item>Homepage</item>
+        <item>Blog</item>
+        <item>Profile</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>FTP</item>
+        <item>Other</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="opt_logging_types">
+        <item>No logging</item>
+        <item>Application data only</item>
+        <item>Application and contacts data</item>
+    </string-array>
+    <string-array name="opt_sorting_directions">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+    <string-array name="opt_sorting_types">
+        <item>Contact label</item>
+        <item>First name</item>
+        <item>Last name</item>
+        <item>Nickname</item>
+        <item>Organization</item>
+        <item>Last activity</item>
+        <item>Most contacted</item>
+        <item>Last modified</item>
+    </string-array>
+</resources>

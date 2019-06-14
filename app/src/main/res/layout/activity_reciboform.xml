@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/form_recibos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tr_botonesrecibos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_editarrecibos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_boton_plano"
+                    android:visibility="gone"
+
+                    android:text="Editar"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/lblExpenseCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#404040"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+
+                    android:layout_weight="1"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btn_eliminarrecibos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_gravity="right"
+
+                    android:background="@drawable/bk_boton_plano"
+                    android:text="Eliminar"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/usuarioidrecibo_recibosl"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/usuarioidrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:hint="Usuario"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/servicioidrecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/servicioidrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Servicioid"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/productoidrecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/productoidrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:hint="Producto"
+                    android:visibility="gone"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/aniorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/aniorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Anio"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/mesrecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/mesrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Mes"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <ImageButton android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/ib_agregarproducto" android:layout_width="48.0dip" android:layout_height="48.0dip"
+                android:src="@drawable/vector_agregar" style="@style/Widget.AppCompat.ActionButton" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_productos"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/valorrecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/valorrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+
+                    android:hint="Valor"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/valornetorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/valornetorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Valorneto"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pagoanticipadorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pagoanticipadorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pagoanticipado"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/estadorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/estadorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Estado"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/fechalimiterecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fechalimiterecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Fechalimite"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/descuentorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/descuentorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Descuento"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/formapagorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/formapagorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Formapago"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/fechageneradorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fechageneradorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Fechagenerado"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/horarecibo_recibosl"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/horarecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Hora"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/ivarecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ivarecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Iva"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/fechapagorecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fechapagorecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Fechapago"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/cantidadrecibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/cantidadrecibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Cantidad"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa1recibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa1recibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa1Recibo"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa2recibo_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa2recibo_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa2Recibo"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/user_id_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_id_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="User_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/groupuser_id_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupuser_id_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Groupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/todos_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/todos_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Todos"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/excepgroupuser_id_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/excepgroupuser_id_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Excepgroupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistemacategoria_id_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistemacategoria_id_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistemacategoria_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistema_id_recibosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistema_id_recibos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistema_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_crearformRecibo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+            <Button
+                android:id="@+id/btn_crearformRecibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

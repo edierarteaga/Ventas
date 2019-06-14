@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/form_usuarionuevos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tr_botonesusuarionuevos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_editarusuarionuevos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_boton_plano"
+
+                    android:text="Editar"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/lblExpenseCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#404040"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+
+                    android:layout_weight="1"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btn_eliminarusuarionuevos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_gravity="right"
+
+                    android:background="@drawable/bk_boton_plano"
+                    android:text="Eliminar"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/codigousuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/codigousuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Codigo"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/nombresusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nombresusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nombres"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/apellidosusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/apellidosusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Apellidos"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/cedulausuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/cedulausuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Cedula"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/telefono1usuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/telefono1usuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Telefono1"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/telefono2usuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/telefono2usuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Telefono2"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/fechaafiliacionusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/fechaafiliacionusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Fechaafiliacion"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/direccionusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/direccionusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Direccion"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/barriousuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/barriousuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Barrio"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/valormensualusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/valormensualusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Valormensual"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/responsableusuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/responsableusuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Responsable"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa1usuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa1usuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa1Usuarionuevo"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa2usuarionuevo_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa2usuarionuevo_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa2Usuarionuevo"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/user_id_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_id_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="User_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/groupuser_id_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupuser_id_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Groupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/todos_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/todos_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Todos"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/excepgroupuser_id_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/excepgroupuser_id_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Excepgroupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistemacategoria_id_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistemacategoria_id_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistemacategoria_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistema_id_usuarionuevosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistema_id_usuarionuevos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistema_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_crearformUsuarionuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_crearformUsuarionuevo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:padding="10dp"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

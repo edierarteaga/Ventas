@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_cerrar"
+        android:title="Cerrar Sesion"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myswitch"
+        android:title=""
+        app:showAsAction="always"
+        android:actionLayout="@layout/switch_layout"
+        />
+    <item android:id="@+id/action_actualizarusuarionuevo_internet"
+        android:title="Sincronizar"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_actualizarconfigusuarionuevo_local"
+        android:title="Sincronizar tarifas"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item android:id="@+id/nuevaventa"
+        android:title="Nueva Venta"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/misventas"
+        android:title="Ultimas Ventas"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/eliminarrecibos"
+        android:title="Eliminar recibos"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

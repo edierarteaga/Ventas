@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="-5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/layoutprincipal"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bk_boton_plano"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="Crear"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_vendedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="1sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TableRow
+        android:id="@+id/tr_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_cedproducto"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite:"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_buscarced"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_busqueda"
+            android:text=""
+            android:textColor="@android:color/white" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_productos"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_crearProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+
+            android:layout_alignParentStart="true"
+
+
+            android:layout_gravity="left"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="13dp"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_behavior="com.dev2qa.example.material_design.floatingactionbutton.FloatingActionButtonScrollBehavior" />
+
+        <Button
+            android:id="@+id/btnTotalValorPedido"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="8dp"
+            android:text="$0"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#ef9a9a" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/form_productos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tr_botonesproductos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_editarproductos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_boton_plano"
+
+                    android:text="Editar"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/lblExpenseCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#404040"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+
+                    android:layout_weight="1"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btn_eliminarproductos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_gravity="right"
+
+                    android:background="@drawable/bk_boton_plano"
+                    android:text="Eliminar"
+                    android:textColor="@android:color/white" />
+            </TableRow>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/nombreproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nombreproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nombre"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/descripcionproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/descripcionproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Descripcion"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/marcaproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/marcaproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Marca"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/categoriaproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/categoriaproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Categoria"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/referenciaproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/referenciaproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Referencia"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/preciocompraproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/preciocompraproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Preciocompra"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/precioventaproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/precioventaproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Precioventa"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/existenciasproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/existenciasproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Existencias"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/minimoexistenciasproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/minimoexistenciasproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Minimoexistencias"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/maximoexistenciasproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/maximoexistenciasproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Maximoexistencias"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:id="@+id/proveedorproducto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/proveedorproducto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Proveedor"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa1producto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa1producto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa1Producto"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/pa2producto_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/pa2producto_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Pa2Producto"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/user_id_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/user_id_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="User_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/groupuser_id_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/groupuser_id_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Groupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/todos_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/todos_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Todos"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/excepgroupuser_id_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/excepgroupuser_id_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Excepgroupuser_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistemacategoria_id_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistemacategoria_id_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistemacategoria_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/sistema_id_productosl"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sistema_id_productos"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Sistema_Id"
+                    android:inputType="text"
+                    android:gravity="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona Imagen"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/colorAccent"
+                android:onClick="onclick"
+                android:textColor="#ffff"
+                android:id="@+id/btnCargarImg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/img_base"
+                android:id="@+id/imagemId"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView" />
+            <Button
+                android:id="@+id/btn_crearformProducto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:padding="10dp"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+            <Button
+                android:id="@+id/btn_crearformProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_boton_plano"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
